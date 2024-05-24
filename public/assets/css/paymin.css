@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+html.open, body.open {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  padding: 40px;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: "Poppins" , sans-serif;
+}
+
+
+main {
+  background-color: #1C4670;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 900;
+  font-family: "Poppins" , sans-serif;
+  color: #071019;
+
+}
+
+table {
+  display: block;
+}
+
+tr, td, tbody, tfoot {
+  display: block;
+}
+
+thead {
+  display: none;
+}
+
+tr {
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+td:before {
+  content: attr(data-title);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+thead th {
+  background-color: #071019;
+  color: #fff;
+  border: 1px solid #071019;
+}
+
+
+
+.button {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  background-color: #071019;
+}
+
+.select {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #1C4670;
+  font-weight: 500;
+}
+.select:before {
+  display: none;
+}
+
+
+@media (min-width: 460px) {
+  td {
+    text-align: left;
+  }
+  td:before {
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+  }
+
+  .select {
+    padding-left: 160px;
+  }
+}
+@media (min-width: 720px) {
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  td, th {
+    display: table-cell;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td {
+    border: 1px solid #071019;
+  }
+  td:before {
+    display: none;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+
+  tr:nth-child(2n+2) td {
+    background-color: #1C4670;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+}
